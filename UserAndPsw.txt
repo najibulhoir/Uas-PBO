@@ -1,0 +1,12 @@
+Admin-----------------
+User 	:khoiri
+Psw 	:020198
+
+User 	:EAP
+Psw 	:260400
+
+
+Karyawan--------------
+User 	:ruroh
+Psw 	:ruroh
+

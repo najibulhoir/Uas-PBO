@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="01d1d7b5-551c-40c2-9df1-3a7701a51e3b">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT * FROM `karyawan`]]>
+	</queryString>
+	<field name="id_karyawan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_karyawan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telepon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="password" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="akses" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="69" height="15" uuid="7fdda6c8-1a5b-4702-af8e-75e23dd0bc84"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[id_karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="0" width="69" height="15" uuid="45a38fde-13a8-4b7e-97c6-fedb870b734b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[nama_karyawan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="69" height="15" uuid="dbb96a4f-9f67-419f-9e0e-42f688223f2e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="0" width="69" height="15" uuid="24628431-d103-4c89-9a75-c200c2da2094"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="69" height="15" uuid="e0fa685b-d1e4-43f2-b8ff-4d2d0428f9da"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="345" y="0" width="69" height="15" uuid="d551aebb-cf1e-4609-a093-a8e3123a3826"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[username]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="69" height="15" uuid="0bb0361a-7d74-4959-b2d7-ec9502c8e1fc"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[password]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="483" y="0" width="69" height="15" uuid="542037ab-c07c-4259-9da7-8fe6226bf167"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[akses]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="14" width="552" height="1" uuid="96943eb4-1304-4e01-a148-fb48bf19e805"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="69" height="20" uuid="d2544d6a-4e76-410c-89cf-3a2479b95d95"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id_karyawan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="0" width="69" height="20" uuid="e9f757aa-2925-4ed6-bba4-25361804f207"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama_karyawan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="69" height="20" uuid="af1afa86-dd11-4555-a5a5-885b64b2fdd6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="0" width="69" height="20" uuid="a5c5b665-9ee8-4442-a7da-e3af641f8c10"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{telepon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="69" height="20" uuid="8481743a-7e4b-44e6-9db6-7fbd13a89012"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="0" width="69" height="20" uuid="5ce9342b-dda6-4ba9-805f-0ad9e59afa60"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="69" height="20" uuid="a49ba985-f11d-48df-b19c-d3affc4a1e23"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{password}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="0" width="69" height="20" uuid="96913a96-ff2c-459a-ad59-e954359365a0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{akses}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="1" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
